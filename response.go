@@ -10,7 +10,7 @@ import (
 	"github.com/ChrisTrenkamp/goxpath"
 	"github.com/ChrisTrenkamp/goxpath/tree"
 	"github.com/ChrisTrenkamp/goxpath/tree/xmltree"
-	"github.com/masterzen/winrm/soap"
+	"github.com/uzresk/winrm/soap"
 )
 
 func first(node tree.Node, xpath string) (string, error) {

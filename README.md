@@ -1,18 +1,18 @@
 # WinRM for Go
 
-_Note_: if you're looking for the `winrm` command-line tool, this has been splitted from this project and is available at [winrm-cli](https://github.com/masterzen/winrm-cli)
+_Note_: if you're looking for the `winrm` command-line tool, this has been splitted from this project and is available at [winrm-cli](https://github.com/uzresk/winrm-cli)
 
 This is a Go library to execute remote commands on Windows machines through
 the use of WinRM/WinRS.
 
 _Note_: this library doesn't support domain users (it doesn't support GSSAPI nor Kerberos). It's primary target is to execute remote commands on EC2 windows machines.
 
-[![Build Status](https://travis-ci.org/masterzen/winrm.svg?branch=master)](https://travis-ci.org/masterzen/winrm)
-[![Coverage Status](https://coveralls.io/repos/masterzen/winrm/badge.png)](https://coveralls.io/r/masterzen/winrm)
+[![Build Status](https://travis-ci.org/uzresk/winrm.svg?branch=master)](https://travis-ci.org/uzresk/winrm)
+[![Coverage Status](https://coveralls.io/repos/uzresk/winrm/badge.png)](https://coveralls.io/r/uzresk/winrm)
 
 ## Contact
 
-- Bugs: https://github.com/masterzen/winrm/issues
+- Bugs: https://github.com/uzresk/winrm/issues
 
 
 ## Getting Started
@@ -44,7 +44,7 @@ For more information on WinRM, please refer to <a href="http://msdn.microsoft.co
 You can build winrm from source:
 
 ```sh
-git clone https://github.com/masterzen/winrm
+git clone https://github.com/uzresk/winrm
 cd winrm
 make
 ```
@@ -59,7 +59,7 @@ go version
 
 ## Command-line usage
 
-For command-line usage check the [winrm-cli project](https://github.com/masterzen/winrm-cli)
+For command-line usage check the [winrm-cli project](https://github.com/uzresk/winrm-cli)
 
 ## Library Usage
 
@@ -71,7 +71,7 @@ For the fast version (this doesn't allow to send input to the command) and it's 
 package main
 
 import (
-	"github.com/masterzen/winrm"
+	"github.com/uzresk/winrm"
 	"os"
 )
 
@@ -87,7 +87,7 @@ or
 ```go
 package main
 import (
-  "github.com/masterzen/winrm"
+  "github.com/uzresk/winrm"
   "fmt"
   "os"
 )
@@ -110,7 +110,7 @@ By passing a TransportDecorator in the Parameters struct it is possible to use d
 ```go
 package main
 import (
-  "github.com/masterzen/winrm"
+  "github.com/uzresk/winrm"
   "fmt"
   "os"
 )
@@ -138,7 +138,7 @@ For a more complex example, it is possible to call the various functions directl
 package main
 
 import (
-  "github.com/masterzen/winrm"
+  "github.com/uzresk/winrm"
   "fmt"
   "bytes"
   "os"
@@ -173,7 +173,7 @@ For using HTTPS authentication with x 509 cert without checking the CA
 	package main
 
 	import (
-		"github.com/masterzen/winrm"
+		"github.com/uzresk/winrm"
 		"os"
 		"io/ioutil"
 	)
@@ -211,7 +211,7 @@ For some additional dependencies, Go needs [Mercurial](http://mercurial.selenic.
 and [Bazaar](http://bazaar.canonical.com/en/) to be installed.
 Winrm itself doesn't require these, but a dependency of a dependency does.
 
-Next, clone this repository into `$GOPATH/src/github.com/masterzen/winrm` and
+Next, clone this repository into `$GOPATH/src/github.com/uzresk/winrm` and
 then just type `make`.
 
 You can run tests by typing `make test`.

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/masterzen/azure-sdk-for-go/core/http"
-	"github.com/masterzen/azure-sdk-for-go/core/tls"
+	"github.com/uzresk/azure-sdk-for-go/core/http"
+	"github.com/uzresk/azure-sdk-for-go/core/tls"
 
 	"github.com/masterzen/winrm/soap"
 )
